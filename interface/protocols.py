@@ -1,5 +1,6 @@
 import typing as _t
 
+@_t.runtime_checkable
 class DataMapping(_t.Protocol):
     def __getitem__(self, key: str) -> str:
         ...
